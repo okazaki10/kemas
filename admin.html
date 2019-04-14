@@ -33,7 +33,7 @@
     <div class="bg-light" id="sidebar-wrapper" style="position: fixed;z-index: 1000;" >
 
       <div class="list-group list-group-flush">
-        <a href="avatar.html">
+       
           <div class="sidebar-heading bg-dark text-light " style="
           padding-top: 60px;
           text-align: center;
@@ -42,7 +42,7 @@
           margin-left: auto;
           margin-right: auto;">
         Admin</div>
-      </a>
+    
       <a href="admin.html" class="list-group-item list-group-item-action">Arsitektur</a>
       <a href="admin.html" class="list-group-item list-group-item-action bg-light">Desain Produk</a>
       <a href="admin.html" class="list-group-item list-group-item-action bg-light">Perencanaan Wilayah Kota</a>
@@ -57,8 +57,7 @@
 
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg" style="position: fixed; width:100%;z-index: 10000;">
       <button class="btn btn-outline-light" id="menu-toggle">Menu</button>
-      <div class="navbar-brand">Kemas</div>
-
+        <div class="navbar-brand" style="background-image: url('kemas.png');background-size: 50px 50px;background-position: left;background-repeat: no-repeat; padding-left: 50px">Kemas</div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -72,14 +71,14 @@
                 <button class="btn btn-outline-light" style="margin-right: 100px;" type="submit">Search</button>
               </form>
 
-          <a href="keranjang.html">
-            <button class="btn btn-outline-success mr-sm-2" type="button"><i class="fa fa-shopping-cart" style="font-size:18px;padding-right: 10px"></i>Keranjang Belanja</button>
+          <a href="tambah_barang.html">
+            <button class="btn btn-success mr-sm-2" type="button"><i class="fa fa-plus" style="font-size:18px;padding-right: 10px"></i>Tambah Barang</button>
           </a>
-          <a href="pengiriman.html">
-            <button class="btn btn-outline-primary mr-sm-2" type="button"><i class="fa fa-truck" style="font-size:18px;padding-right: 10px"></i>Status Pengiriman</button>
+          <a href="konfirmasi.html">
+            <button class="btn btn-primary mr-sm-2" type="button"><i class="fa fa-truck" style="font-size:18px;padding-right: 10px"></i>Konfirmasi Pembayaran</button>
           </a>
           <a href="logout.html">
-            <button class="btn btn-outline-light mr-sm-2" type="button">Logout</button>
+            <button class="btn btn-danger mr-sm-2" type="button">Logout</button>
           </a>
 
         </ul>
@@ -87,7 +86,7 @@
     </nav>
 
     <div id="containerfluid" class="container-fluid">
-      <h2 class="mt-4">Arsitektur</h2>
+      <h2 class="mt-4">Edit Arsitektur</h2>
       <table width="100%">
         <div style="float: right;padding-right: 25px;">
           <span style="font-weight: bold;">Urutkan : </span>
@@ -103,7 +102,8 @@
       </table>
       <div id="products" class="row view-group">
         <div class="item col-xs-4 col-lg-4" style="flex:0 0 15%;">
-          <a href="barang.html" class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+          <div class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+            <a href="barang.html" style="text-decoration: none;">
           <div class="block">
             <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//99/MTA-2857671/dulux_dulux-catylac-eksterior-tinting-cat-tembok---super-white--20-l--_full02.jpg" width="100" height="100">
           </div>
@@ -120,9 +120,14 @@
           </p>
         </div>
       </a>
+        <button class="btn btn-outline-success"><i class="fa fa-edit" style="font-size:18px;padding-right: 3px;"></i>Edit</button>
+        <button class="btn btn-outline-danger"><i class="fa fa-times" style="font-size:18px;padding-right: 3px;"></i>Hapus</button>
+      </div>
+
     </div>
 <div class="item col-xs-4 col-lg-4" style="flex:0 0 15%;">
-          <a href="barang.html" class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+          <div class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+            <a href="barang.html" style="text-decoration: none;">
           <div class="block">
             <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//99/MTA-2857671/dulux_dulux-catylac-eksterior-tinting-cat-tembok---super-white--20-l--_full02.jpg" width="100" height="100">
           </div>
@@ -139,9 +144,14 @@
           </p>
         </div>
       </a>
+        <button class="btn btn-outline-success"><i class="fa fa-edit" style="font-size:18px;padding-right: 3px;"></i>Edit</button>
+        <button class="btn btn-outline-danger"><i class="fa fa-times" style="font-size:18px;padding-right: 3px;"></i>Hapus</button>
+      </div>
+
     </div>
     <div class="item col-xs-4 col-lg-4" style="flex:0 0 15%;">
-          <a href="barang.html" class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+          <div class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+            <a href="barang.html" style="text-decoration: none;">
           <div class="block">
             <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//99/MTA-2857671/dulux_dulux-catylac-eksterior-tinting-cat-tembok---super-white--20-l--_full02.jpg" width="100" height="100">
           </div>
@@ -158,9 +168,14 @@
           </p>
         </div>
       </a>
+        <button class="btn btn-outline-success"><i class="fa fa-edit" style="font-size:18px;padding-right: 3px;"></i>Edit</button>
+        <button class="btn btn-outline-danger"><i class="fa fa-times" style="font-size:18px;padding-right: 3px;"></i>Hapus</button>
+      </div>
+
     </div>
     <div class="item col-xs-4 col-lg-4" style="flex:0 0 15%;">
-          <a href="barang.html" class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+          <div class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+            <a href="barang.html" style="text-decoration: none;">
           <div class="block">
             <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//99/MTA-2857671/dulux_dulux-catylac-eksterior-tinting-cat-tembok---super-white--20-l--_full02.jpg" width="100" height="100">
           </div>
@@ -177,9 +192,14 @@
           </p>
         </div>
       </a>
+        <button class="btn btn-outline-success"><i class="fa fa-edit" style="font-size:18px;padding-right: 3px;"></i>Edit</button>
+        <button class="btn btn-outline-danger"><i class="fa fa-times" style="font-size:18px;padding-right: 3px;"></i>Hapus</button>
+      </div>
+
     </div>
     <div class="item col-xs-4 col-lg-4" style="flex:0 0 15%;">
-          <a href="barang.html" class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+          <div class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+            <a href="barang.html" style="text-decoration: none;">
           <div class="block">
             <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//99/MTA-2857671/dulux_dulux-catylac-eksterior-tinting-cat-tembok---super-white--20-l--_full02.jpg" width="100" height="100">
           </div>
@@ -196,9 +216,14 @@
           </p>
         </div>
       </a>
+        <button class="btn btn-outline-success"><i class="fa fa-edit" style="font-size:18px;padding-right: 3px;"></i>Edit</button>
+        <button class="btn btn-outline-danger"><i class="fa fa-times" style="font-size:18px;padding-right: 3px;"></i>Hapus</button>
+      </div>
+
     </div>
     <div class="item col-xs-4 col-lg-4" style="flex:0 0 15%;">
-          <a href="barang.html" class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+          <div class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+            <a href="barang.html" style="text-decoration: none;">
           <div class="block">
             <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//99/MTA-2857671/dulux_dulux-catylac-eksterior-tinting-cat-tembok---super-white--20-l--_full02.jpg" width="100" height="100">
           </div>
@@ -215,9 +240,14 @@
           </p>
         </div>
       </a>
+        <button class="btn btn-outline-success"><i class="fa fa-edit" style="font-size:18px;padding-right: 3px;"></i>Edit</button>
+        <button class="btn btn-outline-danger"><i class="fa fa-times" style="font-size:18px;padding-right: 3px;"></i>Hapus</button>
+      </div>
+
     </div>
     <div class="item col-xs-4 col-lg-4" style="flex:0 0 15%;">
-          <a href="barang.html" class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+          <div class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+            <a href="barang.html" style="text-decoration: none;">
           <div class="block">
             <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//99/MTA-2857671/dulux_dulux-catylac-eksterior-tinting-cat-tembok---super-white--20-l--_full02.jpg" width="100" height="100">
           </div>
@@ -234,9 +264,14 @@
           </p>
         </div>
       </a>
+        <button class="btn btn-outline-success"><i class="fa fa-edit" style="font-size:18px;padding-right: 3px;"></i>Edit</button>
+        <button class="btn btn-outline-danger"><i class="fa fa-times" style="font-size:18px;padding-right: 3px;"></i>Hapus</button>
+      </div>
+
     </div>
     <div class="item col-xs-4 col-lg-4" style="flex:0 0 15%;">
-          <a href="barang.html" class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+          <div class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+            <a href="barang.html" style="text-decoration: none;">
           <div class="block">
             <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//99/MTA-2857671/dulux_dulux-catylac-eksterior-tinting-cat-tembok---super-white--20-l--_full02.jpg" width="100" height="100">
           </div>
@@ -253,9 +288,14 @@
           </p>
         </div>
       </a>
+        <button class="btn btn-outline-success"><i class="fa fa-edit" style="font-size:18px;padding-right: 3px;"></i>Edit</button>
+        <button class="btn btn-outline-danger"><i class="fa fa-times" style="font-size:18px;padding-right: 3px;"></i>Hapus</button>
+      </div>
+
     </div>
     <div class="item col-xs-4 col-lg-4" style="flex:0 0 15%;">
-          <a href="barang.html" class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+          <div class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+            <a href="barang.html" style="text-decoration: none;">
           <div class="block">
             <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//99/MTA-2857671/dulux_dulux-catylac-eksterior-tinting-cat-tembok---super-white--20-l--_full02.jpg" width="100" height="100">
           </div>
@@ -272,9 +312,14 @@
           </p>
         </div>
       </a>
+        <button class="btn btn-outline-success"><i class="fa fa-edit" style="font-size:18px;padding-right: 3px;"></i>Edit</button>
+        <button class="btn btn-outline-danger"><i class="fa fa-times" style="font-size:18px;padding-right: 3px;"></i>Hapus</button>
+      </div>
+
     </div>
     <div class="item col-xs-4 col-lg-4" style="flex:0 0 15%;">
-          <a href="barang.html" class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+          <div class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+            <a href="barang.html" style="text-decoration: none;">
           <div class="block">
             <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//99/MTA-2857671/dulux_dulux-catylac-eksterior-tinting-cat-tembok---super-white--20-l--_full02.jpg" width="100" height="100">
           </div>
@@ -291,9 +336,14 @@
           </p>
         </div>
       </a>
+        <button class="btn btn-outline-success"><i class="fa fa-edit" style="font-size:18px;padding-right: 3px;"></i>Edit</button>
+        <button class="btn btn-outline-danger"><i class="fa fa-times" style="font-size:18px;padding-right: 3px;"></i>Hapus</button>
+      </div>
+
     </div>
     <div class="item col-xs-4 col-lg-4" style="flex:0 0 15%;">
-          <a href="barang.html" class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+          <div class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+            <a href="barang.html" style="text-decoration: none;">
           <div class="block">
             <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//99/MTA-2857671/dulux_dulux-catylac-eksterior-tinting-cat-tembok---super-white--20-l--_full02.jpg" width="100" height="100">
           </div>
@@ -310,9 +360,14 @@
           </p>
         </div>
       </a>
+        <button class="btn btn-outline-success"><i class="fa fa-edit" style="font-size:18px;padding-right: 3px;"></i>Edit</button>
+        <button class="btn btn-outline-danger"><i class="fa fa-times" style="font-size:18px;padding-right: 3px;"></i>Hapus</button>
+      </div>
+
     </div>
     <div class="item col-xs-4 col-lg-4" style="flex:0 0 15%;">
-          <a href="barang.html" class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+          <div class="thumbnail card" style="padding-top: 15px;text-decoration: none;">
+            <a href="barang.html" style="text-decoration: none;">
           <div class="block">
             <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium//99/MTA-2857671/dulux_dulux-catylac-eksterior-tinting-cat-tembok---super-white--20-l--_full02.jpg" width="100" height="100">
           </div>
@@ -329,10 +384,14 @@
           </p>
         </div>
       </a>
+        <button class="btn btn-outline-success"><i class="fa fa-edit" style="font-size:18px;padding-right: 3px;"></i>Edit</button>
+        <button class="btn btn-outline-danger"><i class="fa fa-times" style="font-size:18px;padding-right: 3px;"></i>Hapus</button>
+      </div>
+
     </div>
   </div>
 
-<nav aria-label="Page navigation example">ssss
+<nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center" >
     <li class="page-item">
       <a class="page-link" href="#" aria-label="Previous">

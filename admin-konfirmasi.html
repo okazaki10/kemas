@@ -27,61 +27,60 @@
 
 <body>
 
-<div class="d-flex" id="wrapper">
+  <div class="d-flex" id="wrapper">
 
-  <!-- Sidebar -->
-  <div class="bg-light" id="sidebar-wrapper" style="position: fixed;z-index: 1000;" >
+    <!-- Sidebar -->
+    <div class="bg-light" id="sidebar-wrapper" style="position: fixed;z-index: 1000;" >
 
-    <div class="list-group list-group-flush">
-      <a href="avatar.html">
-        <div class="sidebar-heading bg-dark text-light " style="
-        padding-top: 60px;
-        text-align: center;
+      <div class="list-group list-group-flush">
+       
+          <div class="sidebar-heading bg-dark text-light " style="
+          padding-top: 60px;
+          text-align: center;
 
-        "><img src="foto_profil/none.jpg" width="100" height="100" class="rounded-circle" alt="Cinque Terre" style="display: block;
-        margin-left: auto;
-        margin-right: auto;">
-      Nama</div>
-    </a>
-    <a href="index.html" class="list-group-item list-group-item-action bg-light">Beranda</a>
-    <a href="arsitektur.html" class="list-group-item list-group-item-action bg-light">Arsitektur</a>
-    <a href="desainproduk.html" class="list-group-item list-group-item-action bg-light">Desain Produk</a>
-    <a href="perencanaan.html" class="list-group-item list-group-item-action bg-light">Perencanaan Wilayah Kota</a>
-    <a href="desaininterior.html" class="list-group-item list-group-item-action bg-light">Desain Interior</a>
-    <a href="dkv.html" class="list-group-item list-group-item-action bg-light">Desain Komunikasi Visual</a>
-  </div>
-</div>
-<!-- /#sidebar-wrapper -->
-
-<!-- Page Content -->
-<div id="page-content-wrapper" style="width: 100%;">
-
-  <nav class="navbar navbar-dark bg-dark navbar-expand-lg" style="position: fixed; width:100%;z-index: 10000;">
-    <button class="btn btn-outline-light" id="menu-toggle">Menu</button>
-       <div class="navbar-brand" style="background-image: url('kemas.png');background-size: 50px 50px;background-position: left;background-repeat: no-repeat; padding-left: 50px">Kemas</div>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        
-
-        <a href="keranjang.html">
-          <button class="btn btn-success mr-sm-2" type="button"><i class="fa fa-shopping-cart" style="font-size:18px;padding-right: 10px"></i>Keranjang Belanja</button>
-        </a>
-        <a href="pengiriman.html">
-          <button class="btn btn-primary mr-sm-2" type="button"><i class="fa fa-truck" style="font-size:18px;padding-right: 10px"></i>Status Pengiriman</button>
-        </a>
-        <a href="logout.html">
-          <button class="btn btn-danger mr-sm-2" type="button">Logout</button>
-        </a>
-
-      </ul>
+          "><img src="https://i.ytimg.com/vi/jk8KjhKZ1rE/maxresdefault.jpg" width="100" height="100" class="rounded-circle" alt="Cinque Terre" style="display: block;
+          margin-left: auto;
+          margin-right: auto;">
+        Admin</div>
+    
+      <a href="admin.html" class="list-group-item list-group-item-action">Arsitektur</a>
+      <a href="admin.html" class="list-group-item list-group-item-action bg-light">Desain Produk</a>
+      <a href="admin.html" class="list-group-item list-group-item-action bg-light">Perencanaan Wilayah Kota</a>
+      <a href="admin.html" class="list-group-item list-group-item-action bg-light">Desain Interior</a>
+      <a href="admin.html" class="list-group-item list-group-item-action bg-light">Desain Komunikasi Visual</a>
     </div>
-  </nav>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper" style="width: 100%;">
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg" style="position: fixed; width:100%;z-index: 10000;">
+      <button class="btn btn-outline-light" id="menu-toggle">Menu</button>
+   <div class="navbar-brand" style="background-image: url('kemas.png');background-size: 50px 50px;background-position: left;background-repeat: no-repeat; padding-left: 50px">Kemas</div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+         
+
+          <a href="tambah_barang.html">
+            <button class="btn btn-success mr-sm-2" type="button"><i class="fa fa-plus" style="font-size:18px;padding-right: 10px"></i>Tambah Barang</button>
+          </a>
+          <a href="konfirmasi.html">
+            <button class="btn btn-primary mr-sm-2" type="button"><i class="fa fa-truck" style="font-size:18px;padding-right: 10px"></i>Konfirmasi Pembayaran</button>
+          </a>
+          <a href="logout.html">
+            <button class="btn btn-danger mr-sm-2" type="button">Logout</button>
+          </a>
+
+        </ul>
+      </div>
+    </nav>
 
   <div id="containerfluid" class="container-fluid">
     <h2 class="mt-4">Detail Status Pengiriman</h2>
@@ -182,11 +181,21 @@
 </ul>
 </nav>
 <div class="row">
-  <div class="col-sm-8">
-    
-  </div>
-<div class="col-sm-4">
+  
+<div class="col-sm">
+  <p style="font-weight: bold;margin-bottom: 0px;">ID Transaksi : 312452329</p>
+                 <p style="margin-bottom: 0px">Nama : Nama</p>
+                 <p style="margin-bottom: 0px">Alamat : Jawa Barat, Surabaya, Sukolilo, Jl marina emas blok 234</p>
+                 <p style="margin-bottom: 0px">Kode Pos : 42352</p>
+                 <p style="margin-bottom: 0px">Jumlah : 104</p>
  <p >Harga Total : <span style="color: #fa591d;font-weight: bold;">Rp 520.000.000</span></p>
+<div class="row">
+  <div class="col-sm">
+ <a href="admin-konfirmasi.html"><button class="btn btn-outline-success" style="float:right;width: 100%">Konfirmasi</button></a>
+</div>
+<div class="col-sm">
+   <a href="admin-konfirmasi.html"><button class="btn btn-outline-danger" style="float:right;width: 100%">Batal Konfirmasi</button></a>
+ </div>
 
 </div>
 </div>
